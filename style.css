@@ -1,3 +1,93 @@
 body {
-  background-color: rgb(52, 52, 52);
+  background: linear-gradient(135deg, #1e1e2f, #3a3a4f); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+}
+div.bg-gray-900 {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 24px;
+  background: #1f1f2f; 
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+input#text {
+  border: 2px solid #4f46e5; 
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #2a2a3d;
+  color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input#text:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+  outline: none;
+}
+button {
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button#add-task-btn {
+  background-color: #4f46e5; /* indigo */
+  border: 2px solid #4f46e5;
+}
+
+button#add-task-btn:hover {
+  background-color: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.05);
+}
+
+button#save-todo-btn {
+  background-color: #f59e0b; 
+  border: 2px solid #f59e0b;
+}
+
+button#save-todo-btn:hover {
+  background-color: #fbbf24;
+  border-color: #fbbf24;
+  transform: scale(1.05);
+}
+
+
+div#listBox button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+div#listBox button:hover {
+  transform: scale(1.05);
+}
+#listBox div {
+  background: #2a2a3d;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#listBox div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Todo text */
+#listBox p {
+  margin: 0;
+  font-weight: 500;
+  color: #e5e7eb; 
+  word-break: break-word; 
 }
